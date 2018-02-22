@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+{% block title %}Read: {{ title }}{% endblock %}
+{% block body %}
+
+
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script src="{{ asset('js/article_show.js') }}"></script>
+{% endblock %}
