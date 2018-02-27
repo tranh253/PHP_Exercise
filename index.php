@@ -52,7 +52,7 @@ function getdestination($address){
   $address = urlencode($address);
 
   // google map geocode api url
-  $url = "https://maps.googleapis.com/maps/api/geocode/json?address={$address}&key=AIzaSyBmVD9vSThqp7gggOXQHB8aNOzC8gjyvLA";
+  $url = "https://maps.googleapis.com/maps/api/geocode/json?address={$address}&key=AIzaSyCxs0NIji6J3bS0XGRBu2i-538CqKSvwRU";
 
   // get the json response
   $resp_json = file_get_contents($url);
@@ -173,7 +173,7 @@ if(isset($_POST['address'])){
 
 
 
-  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmVD9vSThqp7gggOXQHB8aNOzC8gjyvLA&callback=initMap"></script>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxs0NIji6J3bS0XGRBu2i-538CqKSvwRU&callback=initMap"></script>
   <script type="text/javascript">
   function initMap() {
     var map = new google.maps.Map(document.getElementById('gmap'), {
