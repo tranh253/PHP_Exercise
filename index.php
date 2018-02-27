@@ -229,7 +229,7 @@ if(isset($_POST['address'])){
           for(var j=0; j<results.length;j++){
             var element = results[j];
             var dt = element.distance.text;
-            document.getElementById('journey').innerHTML = dt;
+            document.getElementById('range').innerHTML = dt;
           };
         };
       }
@@ -257,7 +257,7 @@ if(isset($_POST['address'])){
       <p>Origin's Latitude and Longitude:</p><?php echo $latitude; ?> | <?php echo $longitude; ?><br>
       <p>Destination's Latitude and Longitude:</p><?php echo $latitude2; ?> | <?php echo $longitude2; ?>
     </div>
-    <p>The Distance between two points:</p><div id="journey"></div>
+    <p>The Distance between two points:</p><div id="range"></div>
 
   </div>
 
